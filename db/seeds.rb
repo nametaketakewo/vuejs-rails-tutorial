@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+%w(Hoge Piyo Huga Foo Bar).each_with_index do |user, i|
+  User.create(name: user, age: 18 + i, bio: "Hi! I'm #{user}!")
+end
